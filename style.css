@@ -100,6 +100,16 @@ header {
   font-size: 15px;
   color: white;
 }
+.fa-bars {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .fa-bars {
+    display: initial;
+    font-size: 20px;
+    margin: 15px 5px 0px 0px;
+  }
+}
 /* --------------------Header Bölümü Sonu --------------------*/
 /* --------------------Slide Resim Bölümü --------------------*/
 
