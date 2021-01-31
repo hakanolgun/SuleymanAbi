@@ -104,6 +104,9 @@ header {
   header * {
     font-size: 0.8rem;
   }
+  #headermenu a {
+    padding-inline: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   #headermenu {
@@ -332,6 +335,7 @@ header {
 
 /* --------- Teknemizin Baslik ------------- */
 #teknemizinozellikleribaslik {
+  box-sizing: border-box;
   background: rgb(224, 255, 255);
   text-align: center;
   padding: 40px 30px 40px 30px;
@@ -354,17 +358,22 @@ header {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   justify-content: space-around;
-  padding-block: 5vh;
-  padding-inline: 150px;
+  padding: 5vh 150px;
   margin: 0 auto;
   margin-top: 0;
   border: none;
   outline: none;
 }
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .ikiliMenuContainer {
-    padding-inline: 10px;
+    padding: 4vh 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ikiliMenuContainer {
+    padding: 3vh 20px;
   }
   #salon {
     box-sizing: border-box;
@@ -434,18 +443,17 @@ header {
   border-radius: 10px;
   box-shadow: 10px 5px 5px lightgray;
 }
-@media (max-width: 768px) {
-  .ikiliMenuContainer {
-    padding-block: 2vh;
-  }
-}
 #slider2 {
   display: inline-block;
   max-width: 40%;
   overflow: hidden;
-  border-radius: 10px;
 }
-@media (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #slider2 {
+    max-width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
   #slider2 {
     max-width: 98%;
   }
@@ -458,6 +466,7 @@ header {
   animation: 20s slider infinite;
 }
 #slider2 figure img {
+  border-radius: 10px;
   width: 20%;
   float: left;
 }
