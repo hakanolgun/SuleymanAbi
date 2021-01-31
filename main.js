@@ -81,3 +81,7 @@ slider.addEventListener("mouseout" , ()=> {
     } , 5000);    // on mouseout from slide then again start Changing every image after 3  seconds 
 });
 
+function onClickMenu() {
+    document.getElementById("menu").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+}

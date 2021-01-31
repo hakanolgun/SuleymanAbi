@@ -40,9 +40,18 @@
             <p>Kpt.Süleyman Aydoğmuş</p>
             <a href="tel:0532-781-3868"><i class="fas fa-phone-alt"></i>Tel: 0532 781 38 68</a>
             <br>
-            <i class="fas fa-bars"></i>
+            <i id="menu" class="fas fa-bars" onclick="onClickMenu()"></i>
         </div>
     </header>
+
+    <ul class="nav" id="nav">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="#teknemizinozellikleribaslik">Özellikler</a></li>
+        <li><a href="turlarimiz.html">Turlarımız</a></li>
+        <li><a href="rotalarimiz.html">Rotalarımız</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+
     <h1 aria-label="Tekne Turu - Yat Turu - Kemer / Antalya - Yatılı Tur Teknesi"></h1>
     <section class="slider">
         <div class="slides">
@@ -77,6 +86,9 @@
     </section>
 
 
+
+
+
     <section id="turlarcont">
         <div id="turlarsol">
             <h3>TURLARIMIZ</h3><br>
@@ -99,9 +111,10 @@
     <section class="ikiliMenuContainer ikicift">
         <div class="ikiliMenuContainersoltaraf soltarafyazi">
             <h3>KAMARALAR</h3><br>
-            <div><p>Teknemiz 4 kamaralıdır</p>
-            <p>Her kamararada çift kişilik yatak bulunmaktadır</p>
-            <p>Her kamarada ayrı tuvalet ve banyo bulunmaktadır</p>
+            <div>
+                <p><i class="fas fa-door-open"></i>Teknemiz 4 kamaralıdır</p>
+                <p><i class="fas fa-bed"></i>Her kamararada çift kişilik yatak bulunmaktadır</p>
+                <p><i class="fas fa-shower"></i>Her kamarada ayrı tuvalet ve banyo bulunmaktadır</p>
             </div>
         </div>
         <div class="ikiliMenuContainersagtaraf">
@@ -121,19 +134,21 @@
         </div>
         <div class="ikiliMenuContainersoltaraf soltarafyazi">
             <h3>SALON</h3><br>
-            <div><p>Salonumuzda klima bulunmaktadır</p>
-                <p>Salonumuzda televizyon bulunmaktadır</p>
-                <p>İnternet bağlantımız mevcuttur</p>
+            <div>
+                <p><i class="fas fa-wind"></i>Salonumuzda klima bulunmaktadır</p>
+                <p><i class="fas fa-tv"></i>Salonumuzda televizyon bulunmaktadır</p>
+                <p> <i class="fas fa-wifi"></i>İnternet bağlantımız mevcuttur</p>
             </div>
         </div>
     </section>
-    
+
     <section class="ikiliMenuContainer ikicift">
         <div class="ikiliMenuContainersoltaraf soltarafyazi">
             <h3>GÜVERTE</h3><br>
-            <div><p>12 kişilik güneşlenme alanımız mevcuttur</p>
-            <p>Yemek masamız ile açık havada servis yapabiliyoruz</p>
-            <p>Kıyıya çıkmak için hizmet botumuz hazırdır</p>
+            <div>
+                <p><i class="fas fa-umbrella-beach"></i>12 kişilik güneşlenme alanımız mevcuttur</p>
+            <p><i class="fas fa-utensils"></i>Yemek masamız ile açık havada servis yapabiliyoruz</p>
+            <p><i class="fas fa-ship"></i>Kıyıya çıkmak için hizmet botumuz hazırdır</p>
             </div>
         </div>
         <div id="slider2">
@@ -151,14 +166,14 @@
         <h2>HAKKIMDA</h2>
         <img src="Resimler/suleyman.png" alt="Kaptan Süleyman Aydoğmuş - Antalya Kemer Yat Turu">
         <p id="hosgeldiniz"><span>Hilal Ay'a Hoşgeldiniz!</span></p><br>
-        <p>Ben, <span>Süleyman Aydoğmuş</span>. Hilal Ay'ın kaptanıyım.</p><br>
-        <p>Evli ve 2 çocuk babasıyım. Ailem ve Hilal Ay ile birlikte Antalya ilinin Kemer ilçesinde ikamet etmekteyiz.</p><br>
+        <p>Ben, <strong>Süleyman Aydoğmuş</strong>. Hilal Ay'ın kaptanıyım.</p><br>
+        <p>Evli ve 2 çocuk babasıyım. Ailem ve Hilal Ay ile birlikte Antalya ilinin <strong>Kemer</strong> ilçesinde ikamet etmekteyiz.</p><br>
         <p>30 yıllık mesleki tecrübemle, sizlere hayalinizdeki huzurlu ve mutlu tatili yaşatmak için Hilal Ay'ı <em>bakımlı,</em> <em>konforlu</em>  ve <em>yolculuğa hazır</em> bulunduruyorum.</p><br>
-        <p>Denizcilik ve tekne bakımı zor bir zanaat olsa da, bugüne kadar ağırlamış olduğum yerli-yabancı yüzlerce misafirimin tatillerinin sonunda yüzlerindeki mutluluk ve ettikleri teşekkürler benim için en büyük motivasyon olmaktadır.</p><br>
+        <p>Denizcilik ve tekne bakımı zor bir zanaat olsa da, bugüne kadar yerli-yabancı yüzlerce misafirimin tatillerinin sonunda yüzlerindeki mutluluk ve ettikleri teşekkürler benim için en büyük motivasyon olmaktadır.</p><br>
         <p>Kemer'den başladığımız yolculuğumuzu sizin tatil sürenize göre <strong>Phaselis, Olympos, Cennet Koyu, Kleopatra Koyu, Ceneviz Koyu, Sazak Koyu, Adrasan, Sulu Ada, Gökkaya, Batık Şehir, Üçağız</strong> gibi akdenizin birbirinden güzel yerlerini görerek tamamlıyoruz.</p><br>
         <p>Eğer siz de unutulmaz bir <strong>yat tatili</strong> yapmak, <strong>tekne turu</strong> ile akdenizin birbirinden güzel koylarını gezmek, mavinin her tonunu görebileceğiniz muhteşem sularda yüzmek, ister ailenizle ister arkadaşlarınızla <strong>güzel anılar biriktirmek</strong> istiyorsanız, beni arayabilirsiniz.</p><br>
         <p>Hilal Ay ile yapabileceğiniz turlar hakkında bilgi almak için <a href="turlarimiz.html" target="_blank">Turlarımız</a> sayfasını, tatiliniz boyunca görebileceğiniz yerler hakkında bilgi almak için ise <a href="rotalarimiz.html" target="_blank">Rotalarımız</a> sayfasını inceleyebilirsiniz.</p><br>
-        <p>Sormak istediğiniz bir şey olduğunda bana bu numaradan ulaşabilirsiniz.</p><br>
+        <p>Sormak istediğiniz bir şey olduğunda bana bu numaradan ulaşabilirsiniz:</p><br>
         <div><a class="kaptaniara" href="tel:05327813868"><img src="resimler/callicon.png" alt=""> Kaptanı Ara</a></div>
     </section>
 
