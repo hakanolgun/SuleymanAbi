@@ -65,11 +65,6 @@ header {
 #headermenu a:hover {
   color: rgb(255, 255, 0);
 }
-@media screen and (max-width: 768px) {
-  #headermenu {
-    display: none;
-  }
-}
 #headersagtaraf {
   color: white;
   text-decoration: none;
@@ -80,11 +75,7 @@ header {
   align-items: flex-end;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
-  #headersagtaraf {
-    font-size: 0.9rem;
-  }
-}
+
 #headersagtaraf * {
   color: white;
 }
@@ -102,12 +93,33 @@ header {
 }
 .fa-bars {
   display: none;
+  font-size: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header * {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header * {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #headermenu {
+    display: none;
+  }
+  #headersagtaraf {
+    justify-content: space-around;
+    font-size: 0.6rem;
+    padding: 10px 5px;
+  }
+  .fa-phone-alt {
+    font-size: 10px;
+  }
   .fa-bars {
     display: initial;
     font-size: 20px;
-    margin: 15px 5px 0px 0px;
   }
 }
 /* --------------------Header Bölümü Sonu --------------------*/
@@ -297,11 +309,6 @@ header {
   border-radius: 10px;
   background-color: lightcyan;
 }
-@media (max-width: 768px) {
-  #turlarsol > a {
-    padding: 10px 40px 0px 20px;
-  }
-}
 #turlarsol > a:hover {
   border: 1px solid #333;
 }
@@ -318,29 +325,26 @@ header {
   #turlarsol * {
     margin-bottom: 10px;
   }
+  #turlarsol > a {
+    padding: 10px 40px 0px 20px;
+  }
 }
 
 /* --------- Teknemizin Baslik ------------- */
 #teknemizinozellikleribaslik {
-  background: rgb(250, 255, 255);
-  background: linear-gradient(
-    318deg,
-    rgba(250, 255, 255, 1) 0%,
-    rgba(224, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: rgb(224, 255, 255);
   text-align: center;
-  padding: 40px 30px 30px 30px;
+  padding: 40px 30px 40px 30px;
 }
 #teknemizinozellikleribaslik > h2 {
-  margin-top: 3vh;
+  margin-block: 3vh;
   color: #23689b;
 }
 @media (max-width: 768px) {
   #teknemizinozellikleribaslik {
-    background-color: rgb(207, 207, 252);
+    background: rgb(224, 255, 255);
     text-align: center;
-    padding: 40px 20px 10px 20px;
+    padding: 20px 20px 20px 20px;
   }
 }
 /* --------- Teknemizin Baslik ------------- */
@@ -490,14 +494,15 @@ header {
 
 /* ------------------ Hakkımda -------------- */
 #hakkimda {
+  box-sizing: border-box;
   width: 100%;
   min-height: 100vh;
   background-color: #23689b;
   background-image: linear-gradient(315deg, #23689b 0%, rgb(11, 11, 111) 100%);
-  padding: 8vh 4vh;
   font-size: 1.5rem;
   color: white;
-  padding-inline: 50px;
+  padding: 60px 4vh;
+  border-bottom: 2px solid white;
 }
 @media (max-width: 768px) {
   #hakkimda {
@@ -518,14 +523,16 @@ header {
   margin-right: 40px;
   margin-bottom: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #hakkimda > img {
+    display: block;
+    float: none;
     max-width: 100%;
     margin: 0 auto;
-    margin-bottom: 30px;
   }
 }
 #hosgeldiniz {
+  margin-top: 30px;
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -615,6 +622,7 @@ strong {
 /* -------------------- Footer--------------------*/
 
 footer {
+  box-sizing: border-box;
   width: 100%;
   height: 140px;
   min-height: 140px;
@@ -630,11 +638,15 @@ footer {
 footer p {
   color: lightgray;
 }
+
 footer div:nth-of-type(2) {
   justify-self: center;
+  align-self: stretch;
   text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  display: grid;
+  grid-auto-rows: 20px;
+  align-content: center;
 }
 
 footer a {
@@ -660,16 +672,19 @@ footer a:hover {
     font-size: 0.8rem;
   }
   footer div:nth-of-type(2) {
-    justify-self: start;
+    justify-self: stretch;
     text-align: left;
     font-size: 1rem;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   footer div:nth-of-type(2) > a {
     justify-self: start;
     text-align: left;
     font-size: 1rem;
-    margin-bottom: 15px;
+    margin-inline: 14px;
   }
   #footersag {
     text-align: left;
