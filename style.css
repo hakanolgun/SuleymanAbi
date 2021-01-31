@@ -798,10 +798,13 @@ footer a:hover {
   background-color: #23689b;
   z-index: 5;
   position: fixed;
-  left: -2000px;
+  left: -3000px;
   transition: all 0.4s ease;
 }
 .change {
   left: 0px;
+}
+.close {
+  left: -3000px;
 }
 /* ------------------Hamburger----------------- */
