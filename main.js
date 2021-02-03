@@ -85,6 +85,3 @@ function onClickMenu() {
     document.getElementById("menu").classList.toggle("change");
     document.getElementById("nav").classList.toggle("change");
 }
-function onClickOzel() {
-    document.getElementById("nav").classList.toggle("close");
-}
