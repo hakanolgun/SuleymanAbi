@@ -7,6 +7,7 @@
     url(Fontlar/NotoSans-Regular.svg#NotoSans-Regular) format("svg"),
     url(Fontlar/NotoSans-Regular.woff) format("woff"),
     url(Fontlar/NotoSans-Regular.woff2) format("woff2");
+  font-display: swap;
 }
 * {
   margin: 0;
@@ -168,7 +169,11 @@ header {
   height: calc(100vh - 100px);
   overflow: hidden;
 }
-
+@media screen and (max-width: 576px) {
+  .slider {
+    height: calc(50vh - 100px);
+  }
+}
 .slides {
   position: absolute;
   width: 400%;
@@ -592,12 +597,24 @@ header {
     padding: 40px 20px;
   }
 }
+
 #hakkimda > h2 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
   color: #23689b;
   letter-spacing: 0.2rem;
+}
+@media (max-width: 576px) {
+  #hakkimda {
+    padding: 5px 20px 30px 20px;
+  }
+  #hakkimda > h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #23689b;
+    letter-spacing: 0.2rem;
+  }
 }
 #hak-img-1 {
   float: left;
@@ -930,9 +947,6 @@ footer a:hover {
   align-items: center;
   justify-content: space-around;
   padding-block: 10px;
-}
-#iletisim-soltaraf_alt {
-  background-color: darkcyan;
 }
 
 #iletisim-sagtaraf {
