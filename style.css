@@ -202,7 +202,7 @@ header {
 }
 
 .slide:nth-child(2) {
-  background-image: url(Resimler/Foto-4.webp);
+  background-image: url(Resimler/suluada.webp);
 }
 
 .slide:nth-child(3) {
@@ -937,7 +937,7 @@ footer a:hover {
 
 #iletisim-sagtaraf {
   box-sizing: border-box;
-  background-image: url(resimler/Main1.webp);
+  background-image: url(Resimler/Main1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
