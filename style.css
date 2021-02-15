@@ -488,6 +488,11 @@ header {
   justify-content: center;
   align-items: center;
 }
+.ikiliMenuContainersagtaraf picture {
+  width: 96%;
+  max-width: 500px;
+  border-radius: 10px;
+}
 .ikiliMenuContainersagtaraf img {
   width: 96%;
   max-width: 500px;
